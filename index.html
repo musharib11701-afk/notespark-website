@@ -5,17 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NoteSpark - Free Cambridge Past Papers & Premium Notes</title>
   <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cambridge Study Hub</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f0a500;
     }
 
     /* Hero Section */
@@ -29,7 +38,6 @@
       color: white;
       position: relative;
     }
-
     .hero::after {
       content: "";
       position: absolute;
@@ -37,25 +45,23 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(0,0,0,0.5); /* dark overlay */
+      background-color: rgba(0,0,0,0.5);
     }
-
     .hero-content {
       position: relative;
       z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
     }
-
     .hero-content h1 {
       font-size: 3rem;
       margin-bottom: 20px;
       font-weight: bold;
     }
-
     .hero-content p {
       font-size: 1.2rem;
       margin-bottom: 30px;
     }
-
     .cta-button {
       padding: 15px 30px;
       background-color: #f0a500;
@@ -65,31 +71,39 @@
       border-radius: 8px;
       transition: background 0.3s;
     }
-
     .cta-button:hover {
       background-color: #d18f00;
     }
 
-    /* Section Styling */
+    /* Sections */
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
-
     section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
       text-align: center;
     }
+    section ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    section ul li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
 
+    /* Cards for Resources */
     .resources, .premium {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      margin-top: 30px;
     }
-
     .card {
       background: #f4f4f4;
       padding: 20px;
@@ -98,11 +112,9 @@
       text-align: center;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-
     .card h3 {
       margin-bottom: 15px;
     }
-
     .card a {
       display: inline-block;
       margin-top: 10px;
@@ -112,7 +124,6 @@
       text-decoration: none;
       border-radius: 5px;
     }
-
     .card a:hover {
       background-color: #d18f00;
     }
@@ -121,8 +132,8 @@
     #contact {
       text-align: center;
       background-color: #f0f0f0;
+      padding: 60px 20px;
     }
-
     #contact a {
       padding: 15px 30px;
       background-color: #0077cc;
@@ -131,13 +142,28 @@
       font-weight: bold;
       border-radius: 8px;
     }
-
     #contact a:hover {
       background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
     }
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="subjects.html">Subjects</a>
+    <a href="pastpapers.html">Past Papers</a>
+    <a href="premium.html">Premium Notes</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
   <!-- Hero Section -->
   <header class="hero">
@@ -147,6 +173,17 @@
       <a href="#premium" class="cta-button">Start Free Trial</a>
     </div>
   </header>
+
+  <!-- Extended Description / Why Choose NoteSpark -->
+  <section>
+    <h2>Why Choose NoteSpark?</h2>
+    <ul>
+      <li>✅ Free access to past papers for all Cambridge subjects</li>
+      <li>✅ Step-by-step solutions and examiner tips</li>
+      <li>✅ Exclusive premium notes for serious students</li>
+      <li>✅ Easy-to-navigate, student-friendly design</li>
+    </ul>
+  </section>
 
   <!-- Free Resources Section -->
   <section id="free">
@@ -192,183 +229,21 @@
     </div>
   </section>
 
-  <!-- Contact / Call to Action -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Get Started Today!</h2>
     <p>Have questions? Ready to save time and study smarter?</p>
     <a href="#premium">Start Your $1 Trial</a>
-  </section>
-
-</body>
-</html>
->
-  <header>
-    <h1>Welcome to <span style="color:#ff4b5c;">NoteSpark</span></h1>
-    <p>Your #1 source for free Cambridge past papers and exclusive premium notes!</p>
-    <nav>
-      <a href="subjects.html">Subjects</a> |
-      <a href="pastpapers.html">Past Papers (Free)</a> |
-      <a href="premium.html">Premium Notes</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>Why Choose NoteSpark?</h2>
-    <ul>
-      <li>✅ Free access to past papers for all Cambridge subjects</li>
-      <li>✅ Step-by-step solutions and examiner tips</li>
-      <li>✅ Exclusive premium notes for serious students</li>
-      <li>✅ Easy-to-navigate, student-friendly design</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Get Started</h2>
-    <p>Pick your subject and start preparing for your exams like a pro!</p>
-    <a href="subjects.html" class="button">Explore Subjects</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 NoteSpark. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subjects - NoteSpark</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-  <header>
-    <h1>Subjects</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="pastpapers.html">Past Papers</a> |
-      <a href="premium.html">Premium Notes</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>Available Subjects</h2>
-    <ul>
-      <li><a href="pastpapers.html#maths">Mathematics</a></li>
-      <li><a href="pastpapers.html#physics">Physics</a></li>
-      <li><a href="pastpapers.html#chemistry">Chemistry</a></li>
-      <li><a href="pastpapers.html#biology">Biology</a></li>
-      <li><a href="pastpapers.html#english">English</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 NoteSpark. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Past Papers - NoteSpark</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-  <header>
-    <h1>Free Cambridge Past Papers</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="subjects.html">Subjects</a> |
-      <a href="premium.html">Premium Notes</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section id="maths">
-    <h2>Mathematics</h2>
-    <ul>
-      <li><a href="#">IGCSE Maths 2024 Past Paper PDF</a></li>
-      <li><a href="#">IGCSE Maths 2023 Past Paper PDF</a></li>
-      <li><a href="#">IGCSE Maths 2022 Past Paper PDF</a></li>
-    </ul>
-  </section>
-
-  <section id="physics">
-    <h2>Physics</h2>
-    <ul>
-      <li><a href="#">IGCSE Physics 2024 Past Paper PDF</a></li>
-      <li><a href="#">IGCSE Physics 2023 Past Paper PDF</a></li>
-    </ul>
-  </section>
-
-  <!-- Repeat similar sections for Chemistry, Biology, English -->
-
-  <footer>
-    <p>&copy; 2025 NoteSpark. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium Notes - NoteSpark</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-  <header>
-    <h1>Exclusive Premium Notes</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="subjects.html">Subjects</a> |
-      <a href="pastpapers.html">Past Papers</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section>
-    <p>Get step-by-step solutions, examiner tips, and exclusive notes not available anywhere else!</p>
-    <p>Delivery: PDF via Google Drive / Notion</p>
-    <p>Payment: EasyPaisa / JazzCash (manual for now)</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 NoteSpark. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - NoteSpark</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="subjects.html">Subjects</a> |
-      <a href="pastpapers.html">Past Papers</a> |
-      <a href="premium.html">Premium Notes</a>
-    </nav>
-  </header>
-
-  <section>
-    <p>Email us at: <a href="mailto:notespark@gmail.com">notespark@gmail.com</a></p>
+    <p style="margin-top:20px;">Email us at: <a href="mailto:notespark@gmail.com">notespark@gmail.com</a></p>
     <p>Instagram / TikTok / YouTube: @NoteSparkOfficial</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 NoteSpark. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+
 
